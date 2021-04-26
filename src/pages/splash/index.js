@@ -3,11 +3,11 @@ import {View,Text,StyleSheet} from 'react-native'
 import {SplashLogo} from '../../assets'
 
 const SplashScreen = ({navigation}) => {
-  // useEffect(()=>{
-  //   setTimeout(()=>{
-  //     navigation.replace('SignIn');
-  //   },2000)
-  // },[])
+  useEffect(()=>{
+    setTimeout(()=>{
+      navigation.replace('SignIn');
+    },2000)
+  },[])
   return (
     <View style={style.page}>
       <SplashLogo/>
